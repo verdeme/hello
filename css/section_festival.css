@@ -1,0 +1,70 @@
+/*<!-- 계절별 축제 및 행사 -->*/
+
+.festival_wrap {
+     width: 1900px;
+     height: 800px;
+     !border: 1px solid red;
+     background-image: url('../image/festivals.jpg');
+     background-repeat: no-repeat;
+     padding-top: 355px;
+     overflow: hidden;
+     /*틀에서 넘치는 이미지 자르기*/
+}
+.festival_wrap h3 {
+     display: none;
+     visibility: hidden;
+}
+.festival_wrap div {
+     display: inline-block;
+     float: left;
+}
+/*오른쪽 왼쪽 작은 원*/
+.circleS {
+     position: relative;
+     width: 360px;
+     height: 360px;
+     border-radius: 180px;
+     background-color: transparent;
+     border: 7px solid #fff;
+     margin-top: 73px;
+     overflow: hidden;
+}
+.circleS:first-child {
+     margin-left: -200px;
+}
+.circleS:last-child {
+     margin-right: -200px;
+}
+/*작은 원에 들어간 이미지*/
+.circleS img {
+     width: 360px;
+     height: 360px;
+}
+/*가운데 큰 원 2개*/
+.circleR {
+     position: relative;
+     width: 500px;
+     height: 500px;
+     border-radius: 250px;
+     background-color: black;
+     border: 10px solid #fff;
+     margin: 0 50px;
+     overflow: hidden;
+}
+/*큰 원에 들어간 이미지*/
+.circleR img {
+     width: 500px;
+     height: 500px;
+}
+/*화살표 정렬용 틀*/
+.arrow_wrap {
+     width: 150px;
+     height: 520px;
+     border: 0px solid blue;
+     text-align: center;
+     line-height: 520px;
+}
+.icon_arrow {
+     color: #fff;
+     cursor: pointer;
+}

@@ -1,0 +1,87 @@
+/*<!-- 이메일 등록 -->*/
+
+.pic-night {
+     position: relative;
+     top: -5px;
+     max-width: 1900px;
+     height: 200px;
+}
+.mailbox {
+     width: 1900px;
+     height: 400px;
+     background-color: #013ca0;
+     background-image: url('../image/mailbox.jpg');
+     background-repeat: no-repeat;
+     margin-top: -12px;
+     text-align: center;
+     padding-top: 166px;
+}
+.btn {
+     width: 730px;
+     height: 80px;
+     border-radius: 38px;
+     margin: 0 auto 30px;
+     line-height: 80px;
+}
+.inputmailbox {
+     border: 3px solid #cccccc;
+}
+
+/*placeholder 폰트 색상 변경하기*/
+/* Webkit */
+.inputmailbox input::-webkit-input-placeholder { color: #fff; }
+/* Firefox 4-18 */
+.inputmailbox input:-moz-placeholder { color: #fff; }
+/* Firefox 19+ */
+.inputmailbox input::-moz-placeholder { color: #fff; }
+/* IE10+ */
+.inputmailbox input:-ms-input-placeholder { color: #fff; }
+
+.input-mail {
+     width: 630px;
+     height: 50px;
+     background-color: transparent;
+     border: 0px;
+     text-align: center;
+     font-size: 22px;
+     color: #FFF;
+}
+.btn-submit {
+     position: relative;
+     z-index: 0;
+     background-color: #cccccc;
+     border: 0px;
+     margin: auto;
+     font-size: 22px;
+     color: #000066;
+     font-style: italic;
+     font-weight: bold;
+     cursor: pointer;
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+/* Button Effect - 오른쪽으로 채우기 */
+.btn-submit:before {
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     /* 기존 글자보다 밑으로 내려오게 설정 */
+     width: 0%;
+     height: 100%;
+     border-radius: 38px;
+     content: '';
+     background: #fff;
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     transition: all 0.3s;
+}
+.btn-submit:hover {
+     font-weight: bold;
+     color: #ff4e50;
+     background-color: transparent;
+}
+.btn-submit:hover:before {
+     width: 100%;
+}

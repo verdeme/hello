@@ -1,0 +1,70 @@
+/*<!-- 삿포로 명소 슬라이더 -->*/
+
+.introPicBox {
+     max-width: 1900px;
+     height: 760px;
+     border: 0px solid yellow;
+     background-color: #111116;
+     padding-top: 180px;
+}
+.introPicBox div {
+     display: inline-block;
+}
+/*명소 슬라이더 가운데 정렬용*/
+.introPicWrap {
+     width: 1582px;
+     height: 600px;
+     border: 0px solid red;
+     margin: auto;
+     cursor: default;
+}
+/*명소 사진*/
+.introPic {
+     width: 1014px;
+     height: 600px;
+     border: 0px solid green;
+     background-image: url('../image/intro1.jpg');
+     background-repeat: no-repeat;
+     float: left;
+}
+/*소개글 배경틀*/
+.introTxt {
+     width: 400px;
+     height: 600px;
+     border: 0px solid orange;
+     background-color: #280000;
+     float: left;
+}
+/*소개글 내용틀*/
+.introTxtBox {
+     position: relative;
+     display: none;
+     width: 320px;
+     height: 500px;
+     border: 0px solid gray;
+     font-size: 18px;
+     margin: 50px 30px 10px 50px;
+}
+.introTxtBox h1 {
+     color: #fff;
+     font-size: 36px;
+     margin-bottom: 20px;
+}
+#intro222,
+#intro333 {
+     display: none;
+}
+.txt_intro {
+     color: #bbbbbb;
+     padding: 30px 10px 20px 26px;
+}
+.introArrow_wrap {
+     line-height: 600px;
+     float: left;
+}
+.introArrow_wrap:first-child {
+     margin-right: 20px;
+}
+.introArrow_wrap:last-child {
+     margin-left: 20px;
+}

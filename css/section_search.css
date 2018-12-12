@@ -1,0 +1,70 @@
+/*<!-- 검색창 및 기본 정보 섹션-->*/
+
+.section-info {
+     max-width: 1900px;
+     height: 910px;
+     background-color: #111116;
+     padding-top: 40px;
+}
+.section-info h4 {
+     display: none;
+     font-size: 0;
+}
+.searchbar {
+     position: relative;
+     width: 800px;
+     height: 34px;
+     border-radius: 50px;
+     background-color: #e0e0e0;
+     margin: auto;
+     padding: 10px;
+}
+.searchbar input {
+     position: absolute;
+     margin-top: 2px;
+     margin-left: 10px;
+     padding-left: 10px;
+     display: inline-block;
+     width: 700px;
+     height: 30px;
+     border: 0px solid red;
+     background: transparent;
+     font-size: 16px;
+     transition: 0.4s ease-in-out;
+}
+/*검색버튼 안보이게 하기*/
+.searchbar input[type=submit] {
+     display: none;
+}
+.icon-search {     /* 검색창 아이콘 */
+     color: #092a74;
+     margin-left: 20px;
+}
+.info-icon-box {
+     width: 800px;
+     height: 80px;
+     !border: 1px solid orange;
+     margin: 40px auto;
+     text-align: center;
+}
+.info-icon {
+     display: inline-block;
+     width: 80px;
+     height: 80px;
+     !border: 1px solid green;
+     font-family: 'Roboto', sans-serif;
+     text-align: center;
+     margin: 0 6px;
+}
+.info-icon-box i {
+     display: block;
+     margin: 3px 0 5px;
+}
+.info-icon-box i, .info-icon-box a {
+     color: #fff;
+}
+.info-icon:hover i,
+.info-icon:hover a {
+     color: #ff4e50;
+     cursor: pointer;
+}

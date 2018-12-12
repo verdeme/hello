@@ -1,0 +1,67 @@
+/*<!-- header 스타일 -->*/
+
+.header-bg {
+     max-width: 1900px;
+     height: 800px;
+     background-image: url('../image/header-bg.jpg');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+}
+/*일본 관광청 로고*/
+.header-logo {
+     width: 100px;
+     height: 80px;
+     border: 0px solid yellow;
+     float: left;
+     margin: 40px 0 0 30px;
+}
+/*일본 관광청 로고 타이틀*/
+.header-logo-title {
+     width: 100px;
+     height: 78px;
+     border: 0px solid yellow;
+     color: #fff;
+     font-size: 22px;
+     text-align: right;
+     display: inline-block;
+     float: left;
+     margin: 42px 0 0 0;
+     font-family: 'Roboto', sans-serif;
+}
+.header-logo-title p {
+     font-weight: bold;
+     height: 32px;
+}
+.header-logo-title span {
+     display: inline-block;
+     line-height: 22px;
+     font-weight: lighter;
+}
+.header-logo-box:hover .header-logo-title {
+     color: rgba(255,0,0,0.9);
+}
+.menubox {
+     font-family: 'Dosis', sans-serif;
+     letter-spacing: 1px;
+     float: right;
+     margin: 40px 10px 0 0;
+}
+.menubox li {
+     float: left;
+     border: 0px solid red;
+     color: #fff;
+     list-style-type: none;
+     margin-right: 30px;
+}
+.menubox a:hover {
+     color: rgba(255,255,255,0.6);
+     cursor: pointer;
+}
+/*요코소 삿포로 로고*/
+.main-logo {
+     width: 330px;
+     height: 154px;
+     margin: 320px 0 0 -50px;
+}

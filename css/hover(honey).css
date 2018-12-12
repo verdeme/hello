@@ -1,0 +1,116 @@
+/*<!-- honey hover Effect -->*/
+
+.info-box {
+     width: 1294px;
+     height: 620px;
+     margin: 0 auto;
+     border: 0px solid red;
+}
+/* Common style */
+.info-box .grid {
+     width: 967px;
+     height: 300px;
+     display: inline-block;
+     border: 0px solid green;
+     overflow: hidden;
+}
+.info-box .grid:first-child {
+     margin-right: 10px;
+     margin-bottom: 10px;
+}
+.info-box .grid:last-child {
+     clear: both;
+     float: right;
+}
+.info-box img:nth-child(2) {
+     float: right;
+}
+.info-box .grid figure figcaption {
+     position: relative;
+     bottom: 57px;
+     !border: 1px solid red;
+     font-family: 'Open Sans', sans-serif;
+     color: #fff;
+     letter-spacing: 0.5px;
+}
+.info-box .grid figure figcaption::before,
+.info-box .grid figure figcaption::after {
+     pointer-events: none;
+     /* HTML 요소에 정의된 클릭, 상태(hover,active등), 커서 옵션들이 비활성화한다.
+     출처: http://webdir.tistory.com/506 [WEBDIR] */
+}
+
+/* Anchor will cover the whole item by default */
+.info-box .grid figure figcaption > a {
+     /* 사진에 링크걸기 위한 속성값 */
+     position: absolute;
+     z-index: 1000;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     font-size: 0;
+     opacity: 0;
+}
+.info-box .grid figure h2 {
+     font-weight: lighter;
+}
+.info-box .grid figure h2 span:first-child {
+     font-weight: bold;
+     letter-spacing: 1px;
+}
+.info-box .grid figure span:last-child {
+     font-family: 'Open Sans', sans-serif;
+     letter-spacing: 1px;
+}
+.info-box figure.effect-honey img {
+     -webkit-transition: opacity 0.35s;
+     transition: opacity 0.35s;
+}
+.info-box figure.effect-honey:hover img {
+     opacity: 0.4;
+     cursor: pointer;
+}
+.info-box figure.effect-honey figcaption::before {
+     /* 그림 밑에 숨겨진 밑줄 */
+     position: absolute;
+     bottom: -20px;
+     left: 0;
+     width: 100%;
+     height: 10px;
+     background: #fff;
+     opacity: 0;
+     content: '';
+     -webkit-transform: translate3d(0,10px,0);
+     transform: translate3d(0,10px,0);
+}
+.info-box figure.effect-honey h2 {
+     text-shadow: 2px 2px 1px #111116;
+     padding-left: 50px;
+     -webkit-transform: translate3d(0,-34px,0);
+     transform: translate3d(0,-34px,0);
+}
+.info-box figure.effect-honey h2 span:last-child {
+     font-style: normal;
+     opacity: 0;
+     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+     transition: opacity 0.35s, transform 0.35s;
+     -webkit-transform: translate3d(0,-40px,0);
+     transform: translate3d(0,-40px,0);
+}
+.info-box figure.effect-honey figcaption::before {
+     -webkit-transition: -webkit-transform 0.5s;
+     transition: transform 0.5s;
+}
+.info-box figure.effect-honey h2 {
+     -webkit-transition: -webkit-transform 0.35s;
+     transition: transform 0.35s;
+}
+.info-box figure.effect-honey:hover figcaption::before,
+.info-box figure.effect-honey:hover h2,
+.info-box figure.effect-honey:hover h2 span:last-child {
+     opacity: 1;
+     -webkit-transform: translate3d(0,0,0);
+     transform: translate3d(0,0,0);
+     cursor: pointer;
+}
